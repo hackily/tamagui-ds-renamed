@@ -1,0 +1,28 @@
+{
+  "name": "@curai/tamagui",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/cjs",
+  "types": "./types/index.d.ts",
+  "module": "dist/esm",
+  "module:jsx": "dist/jsx",
+  "files": [
+    "types",
+    "src",
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "dependencies": {
+    "@tamagui/core": "*",
+    "tamagui": "^1.16.0"
+  },
+  "scripts": {
+    "build": "tamagui-build",
+    "watch": "tamagui-build --watch"
+  },
+  "devDependencies": {
+    "@tamagui/build": "*"
+  }
+}
