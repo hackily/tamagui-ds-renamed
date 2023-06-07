@@ -1,8 +1,8 @@
 {
-  "name": "@curai/tamagui",
+  "name": "@hackily/tamagui",
   "version": "0.0.0",
   "private": true,
-  "main": "dist/cjs",
+  "main": "core/index.ts",
   "types": "./types/index.d.ts",
   "module": "dist/esm",
   "module:jsx": "dist/jsx",
@@ -15,8 +15,10 @@
     "*.css"
   ],
   "dependencies": {
-    "@tamagui/core": "*",
-    "tamagui": "^1.16.0"
+    "@tamagui/core": "^1.36.2",
+    "@tamagui/shorthands": "^1.36.2",
+    "@tamagui/themes": "^1.36.2",
+    "tamagui": "^1.36.2"
   },
   "scripts": {
     "build": "tamagui-build",

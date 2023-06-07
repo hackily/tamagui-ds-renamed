@@ -1,3 +1,2 @@
-import {Circle} from "tamagui";
-
-export {Circle};
+export * from "./circle";
+export * from "./tamagui.config";
