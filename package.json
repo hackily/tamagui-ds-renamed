@@ -1,6 +1,6 @@
 {
-  "name": "@hackily/tamagui",
-  "version": "0.0.1",
+  "name": "@hackily/tamagui-ds-repro",
+  "version": "0.0.0",
   "private": true,
   "main": "core/index.ts",
   "types": "./types/index.d.ts",
@@ -15,16 +15,65 @@
     "*.css"
   ],
   "dependencies": {
+    "@storybook/jest": "^0.1.0",
+    "@storybook/testing-library": "^0.2.0",
     "@tamagui/core": "^1.36.2",
     "@tamagui/shorthands": "^1.36.2",
     "@tamagui/themes": "^1.36.2",
-    "tamagui": "^1.36.2"
+    "@tamagui/vite-plugin": "^1.36.2",
+    "@tamagui/web": "^1.36.2",
+    "react": "^18.2.0",
+    "tamagui": "^1.36.2",
+    "vite": "^4.3.9"
   },
   "scripts": {
-    "build": "tamagui-build",
-    "watch": "tamagui-build --watch"
+    "lint": "node_modules/.bin/eslint '**/*.{js,jsx,ts,tsx}'",
+    "storybook": "TAMAGUI_TARGET=web storybook dev -p 6006",
+    "test": "jest",
+    "test:storybook": "test-storybook"
   },
   "devDependencies": {
-    "@tamagui/build": "*"
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@storybook/addon-a11y": "^7.0.22",
+    "@storybook/addon-essentials": "^7.0.22",
+    "@storybook/addon-interactions": "^7.0.22",
+    "@storybook/addon-links": "^7.0.22",
+    "@storybook/addon-react-native-web": "^0.0.20",
+    "@storybook/blocks": "^7.0.22",
+    "@storybook/react": "^7.0.22",
+    "@storybook/react-vite": "^7.0.22",
+    "@storybook/test-runner": "^0.11.0",
+    "@tamagui/build": "^1.36.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native-a11y": "^3.3.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "eslint-plugin-testing-library": "^5.11.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "prettier": "2.8.8",
+    "prop-types": "^15.8.1",
+    "react-dom": "^18.2.0",
+    "react-native-web": "0.19.5",
+    "storybook": "^7.0.22",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.3"
   }
 }
